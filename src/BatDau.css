@@ -1,0 +1,76 @@
+:root {
+  --vh: 100%;
+}
+
+.start-container {
+  position: relative;
+  width: 100%;
+  height: calc(var(--vh, 1vh) * 100);
+  background-color: #0CC0DF;
+  overflow: hidden;
+}
+
+/* Blob style */
+.blob {
+  position: absolute;
+  background-color: #4CD7DD;
+  opacity: 0.9;
+}
+
+/* Blob 1 */
+.blob1 {
+  width: 150px;
+  height: 120px;
+  top: -30px;
+  left: -30px;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
+
+/* Blob 2 (blob lớn ở giữa) */
+.blob2 {
+  width: 200px;
+  height: 300px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 55% 45% 60% 40% / 60% 50% 50% 40%;
+}
+
+/* Blob 3 */
+.blob3 {
+  width: 120px;
+  height: 240px;
+  bottom: -20px;
+  right: -20px;
+  border-radius: 45% 55% 50% 50% / 55% 45% 55% 45%;
+}
+
+/* Text */
+.title-text {
+  position: relative;
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  z-index: 1;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.moo-lah-lah-regular {
+  font-family: "Moo Lah Lah", sans-serif;
+  font-weight: 500;
+}
+
+/* Button */
+.btn-start {
+  position: relative;
+  z-index: 1;
+  font-weight: bold;
+  padding: 8px 40px;
+  border-radius: 25px;
+  background-color: #0097B2;
+  border: none;
+  color: #FCFCFB;
+  font-size: 24px;
+}

@@ -1,0 +1,92 @@
+:root {
+  --vh: 100%;
+}
+
+.trangchu-container {
+  position: relative;
+  width: 100%;
+  height: calc(var(--vh, 1vh) * 100);
+  background-color: #0CC0DF;
+  overflow: hidden;
+}
+
+.status-bar {
+  background-color: #0097B2;
+  color: white;
+  padding: 20px 0px 20px 0px;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+}
+
+.status-icons {
+  display: flex;
+  gap: 8px;
+  /* khoảng cách giữa các icon */
+}
+
+.animal-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 150px);
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.animal-card {
+  background-color: #F8CA8C;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+
+.animal-card img {
+  width: 130px;
+  height: 130px;
+}
+
+.animal-card:nth-child(5) {
+  grid-column: 1 / -1; /* chiếm toàn bộ hàng */
+  justify-self: center; /* căn giữa trong hàng */
+  width: 150px; /* giữ nguyên kích thước */
+}
+
+.side-icons {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.icon-btn {
+  background-color: #F8CA8C;
+  border: none;
+  border-radius: 10px;
+  padding: 6px;
+  font-size: 24px;
+}
+
+.bottom-bar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #0097B2;
+  padding: 20px 0px;
+}
+
+.btn-time {
+  background-color: #F8CA8C;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
