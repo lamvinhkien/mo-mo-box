@@ -5,10 +5,6 @@ import "./TrangChu.css";
 const TrangChu = () => {
   const navigate = useNavigate();
 
-  const handleTimePage = () => {
-    navigate('/thoi-gian');
-  };
-
   useEffect(() => {
     const setVh = () => {
       document.documentElement.style.setProperty(
@@ -28,7 +24,7 @@ const TrangChu = () => {
         <strong>Trạng thái: đang hoạt động</strong>
         <div className="status-icons">
           <button className="icon-btn">🔔</button>
-          <button className="icon-btn">ℹ️</button>
+          <button className="icon-btn" onClick={() => navigate('/thong-tin')}>ℹ️</button>
         </div>
       </div>
 
@@ -40,7 +36,7 @@ const TrangChu = () => {
         <div className="animal-card">
           <img src="" alt="Gà trống" />
         </div>
-        <div className="animal-card">
+        <div className="animal-card" onClick={() => navigate('/tac-ke')}>
           <img src="" alt="Tắc kè" />
         </div>
         <div className="animal-card">
@@ -53,7 +49,7 @@ const TrangChu = () => {
 
       {/* Nút Thiết lập thời gian */}
       <div className="bottom-bar text-center">
-        <button className="btn-time" onClick={handleTimePage}>THIẾT LẬP THỜI GIAN</button>
+        <button className="btn-time" onClick={() => navigate('/thoi-gian')}>THIẾT LẬP THỜI GIAN</button>
       </div>
     </div>
   );

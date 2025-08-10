@@ -5,10 +5,6 @@ import { useEffect } from "react";
 const BatDau = () => {
   const navigate = useNavigate();
 
-  const handleStart = () => {
-    navigate('/trang-chu');
-  };
-
   useEffect(() => {
     const setVh = () => {
       document.documentElement.style.setProperty(
@@ -30,7 +26,7 @@ const BatDau = () => {
 
       {/* Nội dung */}
       <h1 className="title-text moo-lah-lah-regular">MO MO BOX</h1>
-      <button className="btn-start" onClick={handleStart}>Bắt đầu</button>
+      <button className="btn-start" onClick={() => navigate('/trang-chu')}>Bắt đầu</button>
     </div>
   );
 };

@@ -9,16 +9,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 16px;
+  padding: 10px 25px 0px 25px;
   box-sizing: border-box;
   font-family: sans-serif;
+  overflow: auto;
 }
 
 .title {
   font-size: 26px;
   color: white;
   font-weight: bold;
-  margin: 20px 0px 40px 0px;
+  margin: 20px 0 40px 0;
 }
 
 .time-display {
@@ -29,53 +30,75 @@
   font-weight: bold;
   color: white;
   margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .time-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 20px;
   gap: 50px;
-  width: 270px;
   font-size: 24px;
   margin-bottom: 30px;
+  width: 100%;
 }
 
 .label {
   color: white;
   font-weight: bold;
-  text-wrap-mode: nowrap;
+  white-space: nowrap;
 }
 
 .input-group {
   display: flex;
   align-items: center;
-  justify-content: end;
+  /* Đảm bảo tất cả các phần tử con được căn giữa theo chiều dọc */
+  justify-content: flex-end;
   gap: 8px;
 }
 
 .circle {
+  width: 60px;
+  height: 60px;
   background-color: #F8CA8C;
   color: white;
   font-weight: bold;
-  padding: 8px 12px;
+  font-size: 24px;
   border-radius: 50%;
+  border: none;
   text-align: center;
-  min-width: 30px;
+  -moz-appearance: textfield;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  /* Thêm line-height để căn chỉnh nội dung bên trong input */
+  padding: 0;
+  /* Đảm bảo không có padding bên trong */
+}
+
+.circle::-webkit-outer-spin-button,
+.circle::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .colon {
   color: white;
+  font-size: 24px;
+  /* Đặt lại font-size cho dấu hai chấm */
 }
 
 .mode-selector {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   background-color: #F8CA8C;
   border-radius: 30px;
   padding: 5px 10px;
+  gap: 10px;
 }
 
 .arrow-btn {
@@ -92,28 +115,30 @@
 
 .btn-group {
   display: flex;
-  gap: 30px;
-  margin-top: auto;
-  font-size: 24px;
-  padding: 0px 0px 30px 0px;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 40px;
 }
 
-.btn-save {
+.btn-save,
+.btn-cancel,
+.btn-back {
   background-color: #26498E;
   color: white;
   padding: 10px 30px;
   border-radius: 15px;
   border: none;
   font-weight: bold;
+  font-size: 16px;
   cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  text-wrap-mode: nowrap;
 }
 
 .btn-cancel {
+  background-color: #f44336;
+}
+
+.btn-back {
   background-color: #F8CA8C;
-  color: white;
-  padding: 10px 30px;
-  border-radius: 15px;
-  border: none;
-  font-weight: bold;
-  cursor: pointer;
 }
