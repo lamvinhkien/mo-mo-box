@@ -1,0 +1,135 @@
+:root {
+  --vh: 100%;
+}
+
+.setting-container {
+  width: 100%;
+  height: calc(var(--vh, 1vh) * 100);
+  background-color: #0CC0DF;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: white;
+  overflow: auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.form-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 30px 0px 30px;
+  width: 100%;
+  background-color: #0097B2;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.form-audio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-weight: bold;
+  margin-bottom: 30px;
+  gap: 15px;
+}
+
+.form-group {
+  padding: 16px;
+  width: 100%;
+  font-size: 18px;
+}
+
+.form-group label {
+  display: block;
+  flex: 0 0 80px;
+  font-weight: bold;
+  /* độ rộng nhãn */
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"] {
+  flex: 1;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  padding: 4px;
+  outline: none;
+  width: 100%;
+}
+
+.form-group input[type="range"] {
+  width: 100%;
+  flex: 1;
+  margin-top: 12px;
+  -webkit-appearance: none;
+  background: transparent;
+}
+
+/* Track */
+.form-group input[type="range"]::-webkit-slider-runnable-track {
+  height: 8px;
+  border-radius: 4px;
+  background: linear-gradient(to right,
+      #F8CA8C var(--percent, 50%),
+      #ddd var(--percent, 50%));
+}
+
+.form-group input[type="range"]::-moz-range-track {
+  height: 8px;
+  border-radius: 4px;
+  background: linear-gradient(to right,
+      #F8CA8C var(--percent, 50%),
+      #ddd var(--percent, 50%));
+}
+
+/* Thumb */
+.form-group input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #F8CA8C;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -6px;
+}
+
+.form-group input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #F8CA8C;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+
+.form-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.button-back-caidat {
+  background-color: #F8CA8C;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: none;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  text-wrap-mode: nowrap;
+  margin-right: 50px;
+}
+
+.bottom-img {
+  margin-top: auto;
+  margin-left: -85px;
+  width: 240px;
+}

@@ -30,26 +30,27 @@ const TrangChu = () => {
 
       {/* Lưới hình ảnh */}
       <div className="animal-grid">
-        <div className="animal-card">
-          <img src="" alt="Kangaroo" />
+        <div className="animal-card" onClick={() => navigate('/kangaroo')}>
+          <img src="/images/kangaroo.png" alt="Kangaroo" />
         </div>
-        <div className="animal-card">
-          <img src="" alt="Gà trống" />
+        <div className="animal-card" onClick={() => navigate('/chicken')}>
+          <img src="/images/chicken.png" alt="Gà trống" />
         </div>
-        <div className="animal-card" onClick={() => navigate('/tac-ke')}>
-          <img src="" alt="Tắc kè" />
+        <div className="animal-card" onClick={() => navigate('/gecko')}>
+          <img src="/images/gecko.png" alt="Tắc kè" />
         </div>
-        <div className="animal-card">
-          <img src="" alt="Khỉ" />
+        <div className="animal-card" onClick={() => navigate('/monkey')}>
+          <img src="/images/monkey.png" alt="Khỉ" />
         </div>
-        <div className="animal-card">
-          <img src="" alt="Vẹt" />
+        <div className="animal-card" onClick={() => navigate('/parrot')}>
+          <img src="/images/parrot.png" alt="Vẹt" />
         </div>
       </div>
 
       {/* Nút Thiết lập thời gian */}
       <div className="bottom-bar text-center">
         <button className="btn-time" onClick={() => navigate('/thoi-gian')}>THIẾT LẬP THỜI GIAN</button>
+        <button className="btn-time" onClick={() => navigate('/')}>Quay lại</button>
       </div>
     </div>
   );

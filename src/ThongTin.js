@@ -20,43 +20,43 @@ const ThongTin = () => {
   return (
     <div className="thongtin-container">
       <div className="thongtin-item">
-        <img src="" alt="Kangaroo" className="animal-icon" />
+        <img src="/images/kangaroo.png" alt="Kangaroo" className="animal-icon" />
         <p>
           Chế độ này thì trẻ mà đang ngủ mà có dấu hiệu thức dậy thì hộp sẽ phát
-          ra âm thanh để báo cho phụ huynh
+          ra âm thanh để báo cho phụ huynh.
         </p>
       </div>
 
       <div className="thongtin-item">
-        <img src="" alt="Rooster" className="animal-icon" />
-        <p>Chế độ này giúp thông báo cho phụ huynh khi tới giờ ăn</p>
+        <img src="/images/chicken.png" alt="Rooster" className="animal-icon" />
+        <p>Chế độ này giúp thông báo cho phụ huynh khi tới giờ ăn.</p>
       </div>
 
       <div className="thongtin-item">
-        <img src="" alt="Chameleon" className="animal-icon" />
+        <img src="/images/gecko.png" alt="Chameleon" className="animal-icon" />
         <p>
           Chế độ này giúp theo dõi nhiệt độ trong phòng. Nếu phòng quá lạnh hoặc
-          nóng thì sẽ phát thông báo
+          nóng thì sẽ phát thông báo.
         </p>
       </div>
 
       <div className="thongtin-item">
-        <img src="" alt="Monkey" className="animal-icon" />
+        <img src="/images/monkey.png" alt="Monkey" className="animal-icon" />
         <p>
           Chế độ này sẽ phát ra âm thanh vui nhộn kích thích trẻ vận động vui
-          chơi
+          chơi.
         </p>
       </div>
 
-      <div className="thongtin-item">
-        <img src="" alt="Parrot" className="animal-icon" />
+      <div className="thongtin-item mb-3">
+        <img src="/images/parrot.png" alt="Parrot" className="animal-icon" />
         <p>
           Chế độ này sẽ giúp ru ngủ bé bằng cách phát ra tiếng nhạc hoặc kể lại
-          các câu chuyện có sẵn
+          các câu chuyện có sẵn.
         </p>
       </div>
 
-      <button className="back-button" onClick={() => navigate('/trang-chu')}>BACK</button>
+      <button className="back-button" onClick={() => navigate('/trang-chu')}>Quay lại</button>
     </div>
   );
 };
