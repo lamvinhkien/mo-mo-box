@@ -41,7 +41,7 @@
   font-size: 22px;
   font-weight: bold;
   color: white;
-  padding: 10px 20px;
+  padding: 8px 16px;
 }
 
 .time-row {
@@ -68,8 +68,8 @@
 }
 
 .circle {
-  width: 55px;
-  height: 55px;
+  width: 43px;
+  height: 43px;
   background-color: #F8CA8C;
   color: white;
   font-weight: bold;
@@ -114,12 +114,13 @@
   border: none;
   cursor: pointer;
   color: white;
-  font-size: 28px;
+  font-size: 22.5px;
 }
 
 .mode-box img {
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
+  padding: 4px 0px;
 }
 
 .btn-group {
