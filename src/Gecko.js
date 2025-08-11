@@ -36,7 +36,6 @@ const Gecko = () => {
   };
 
   useEffect(() => {
-    // Cập nhật chiều cao viewport
     const setVh = () => {
       document.documentElement.style.setProperty(
         "--vh",
@@ -47,18 +46,6 @@ const Gecko = () => {
     window.addEventListener("resize", setVh);
     return () => window.removeEventListener("resize", setVh);
   }, []);
-
-  useEffect(() => {
-    // Tự động phát khi vào trang
-    if (audioRef.current) {
-      audioRef.current.volume = value / 100;
-      audioRef.current.play()
-        .then(() => setIsPlaying(true))
-        .catch(err => {
-          console.log("Autoplay bị chặn:", err);
-        });
-    }
-  }, []); // Chỉ chạy khi load lần đầu
 
   return (
     <div className="setting-container">
